@@ -1,11 +1,88 @@
+<!-- https://colorlib.com/preview/theme/personal/ -->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>1.0 HTML + CSS</title>
+  <link rel="stylesheet" href='./asset/css/global.css'>
+  <link rel="stylesheet" href='./asset/css/homePage.css'>
 </head>
+
 <body>
-  hello world!
+  <header class="header-wapper">
+    <div class="header-content">
+      <img class="header-content__logo" src="./asset/images/logo.png" alt="logo" />
+      <ul class="header-content__menu">
+        <li class="header-content__menu-tag">
+          <a href="/index.html"> home </a>
+        </li>
+        <li class="header-content__menu-tag">
+          <a href="./pages/about.html"> about </a>
+        </li>
+        <li class="header-content__menu-tag">
+          <a href="./pages/services.html"> services </a>
+        </li>
+        <li class="header-content__menu-tag">
+          <a href="./pages/portfolio.html"> portfolio </a>
+        </li>
+        <li class="header-content__menu-tag">
+          <a href="/"> pricing </a>
+        </li>
+        <li class="header-content__menu-tag header-content__menu-tag--has-chidren">
+          <a href="/"> blog </a>
+          <img src="./asset/images/icons8-expand-arrow-24.png" alt="" />
+        </li>
+        <li class="header-content__menu-tag header-content__menu-tag--has-chidren">
+          <a href="/"> pages </a>
+          <img src="./asset/images/icons8-expand-arrow-24.png" alt="" />
+        </li>
+        <li class="header-content__menu-tag">
+          <a href="/"> contact </a>
+        </li>
+
+        <li id="js-menu-icon" class="header-content__menu-icon">
+          <img src="./asset/images/icons8-menu-rounded-30.png" alt="">
+        </li>
+
+      </ul>
+    </div>
+  </header>
+
+  <aside class="silde-bar-wapper">
+    <div class="silde-bar-content">
+      <ul class="silde-bar-content__menu">
+        <li class="silde-bar-content__menu-tag">
+          <a href=""> home</a>
+        </li>
+        <li class="silde-bar-content__menu-tag">
+          <a href=""> about</a>
+        </li>
+        <li class="silde-bar-content__menu-tag">
+          <a href=""> services</a>
+        </li>
+        <li class="silde-bar-content__menu-tag">
+          <a href=""> portfolio</a>
+        </li>
+        <li class="silde-bar-content__menu-tag">
+          <a href=""> pricing</a>
+        </li>
+        <li class="silde-bar-content__menu-tag silde-bar-content__menu-tag--has-children">
+          <a href=""> blog</a>
+        </li>
+        <li class="silde-bar-content__menu-tag silde-bar-content__menu-tag--has-children">
+          <a href=""> pages</a>
+        </li>
+        <li class="silde-bar-content__menu-tag">
+          <a href=""> contact</a>
+        </li>
+      </ul>
+    </div>
+  </aside>
+
+  <!-- JS -->
+  <script src="./asset/js/global.js"></script>
 </body>
+
 </html>
