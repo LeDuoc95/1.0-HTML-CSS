@@ -4,6 +4,12 @@ window.addEventListener(
     const getAllTagOfMenu = document.getElementsByClassName("header-content__menu-tag");
     const lengthOfGetAllTagOfMenu = getAllTagOfMenu.length;
     const MenuIcon = document.getElementById("js-menu-icon");
+    const hambergerTop = document.getElementsByClassName('hamberger__bar--top');
+    const hambergerMid = document.getElementsByClassName('hamberger__bar');
+    const hambergerBottom = document.getElementsByClassName('hamberger__bar--bottom');
+
+    let openSlideMenu = false;
+
 
     if (!localStorage.getItem("page")) {
       localStorage.setItem("page", "0");
@@ -19,6 +25,17 @@ window.addEventListener(
     }
 
     MenuIcon.addEventListener("click", () => {
+      if(!openSlideMenu) {
+        hambergerTop[0].classList.add('hamberger-before');
+        hambergerBottom[0].classList.add('hamberger-after');
+        hambergerMid[0].style.display = 'none'
+        openSlideMenu = !openSlideMenu;
+      }else {
+        hambergerTop[0].classList.remove('hamberger-before');
+        hambergerBottom[0].classList.remove('hamberger-after');
+        openSlideMenu = !openSlideMenu;
+        hambergerMid[0].style.display = 'flex'
+      }
       console.log("object");
     });
   },

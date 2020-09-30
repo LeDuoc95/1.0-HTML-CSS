@@ -58,6 +58,7 @@ li {
     justify-content: center;
     align-items: center;
     margin: 0;
+    min-height: 73px;
 }
 
 .header-wapper .header-content .header-content__menu .header-content__menu-tag {
@@ -66,7 +67,6 @@ li {
 }
 
 .header-wapper .header-content .header-content__menu .header-content__menu-icon {
-    padding: 17px 10px;
     display: none;
     z-index: 1000;
 }
@@ -120,8 +120,6 @@ li {
     width: 30%;
     height: 100vh;
     display: flex;
-    /* justify-content: center; */
-    /* align-items: center; */
     margin: 0;
     padding: 10px;
     flex-direction: column;
@@ -143,14 +141,42 @@ li {
 }
 
 
+.hamberger {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ flex-direction: column;
+ position: relative;
+ top: 0;
+ left: 0;
+}
 
+.hamberger .hamberger__bar--top, .hamberger__bar, .hamberger__bar--bottom{
+    width: 20px;
+    height: 2px;
+    background-color: black;
+    transition-timing-function: cubic-bezier(.39,.83,.93,.76);
+    transition-duration: 0.1s;
+    position: absolute;
+}
 
+.hamberger .hamberger__bar--top {
+    top: 4px;
+}
 
+.hamberger .hamberger__bar--bottom {
+    top: -6px;
+}
 
+.hamberger .hamberger-before {
+    transform: rotate(45deg);
+    top: 0;
+}
 
-
-
-
+.hamberger .hamberger-after {
+    transform: rotate(-45deg);
+    top: 0;
+}
 
 
 @media (max-width: 992px) {
