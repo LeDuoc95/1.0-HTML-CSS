@@ -1,4 +1,5 @@
 body {
+    position: relative;
     background-color: var(--main-background-color);
     width: 100vw;
     overflow-x: hidden;
@@ -6,6 +7,7 @@ body {
     padding: 0;
     color: var(--main-text-color);
     font-family: cursive;
+    height: 150vh;
 }
 
 /* // Small devices (landscape phones, 576px and up)
@@ -30,21 +32,29 @@ li {
     --main-background-color: #f9f9ff;
     --color-white: #ffffff;
     --main-text-color: #5a5a5a;
+    --text-content-color: #222222;
     --color-light-blue: #8893ff;
     --color-light-black: #4a4a4c;
     --color-black: #0f0f0f;
     --color-black-ahalf: rgba(0, 0, 0, 0.5);
+    --color-text-description: #777777;
 }
 
 .header-wapper .header-content .header-content__menu .header-content__menu-tag.color-light-bule a {
     color: var(--color-light-blue) !important;
 }
 
+.position-sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
 .header-wapper {
     width: 100%;
     background-color: var(--color-white);
+    box-shadow: 0px 0px 5px 5px rgba(84, 60, 84, 0.37);
 }
-
 
 .header-wapper .header-content {
     width: 100%;
@@ -75,6 +85,42 @@ li {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
+}
+
+.header-content__menu-tag--has-chidren .sub-menu {
+    position: absolute;
+    top: 69px;
+    left: -110px;
+    min-width: 50px;
+    background-color: var(--color-white);
+    margin: 0;
+    padding: 0;
+    min-width: 150px;
+    min-height: 70px;
+    padding-left: 20px;
+    font-size: 12px;
+    box-shadow: 0px 0px 5px 5px rgba(84, 60, 84, 0.1);
+}
+
+.sub-menu.sub-menu--blog {
+    display: none;
+}
+
+.sub-menu.sub-menu--pages {
+    display: none;
+}
+
+.header-content__menu-tag--blog:hover .sub-menu.sub-menu--blog {
+    display: block;
+}
+
+.header-content__menu-tag--pages:hover .sub-menu.sub-menu--pages {
+    display: block;
+}
+
+.header-content__menu-tag--has-chidren .sub-menu .sub-menu__children {
+    padding-top: 10px;
 }
 
 .header-content__menu-tag--has-chidren img {
@@ -102,6 +148,7 @@ li {
     left: 0;
     width: 100%;
     height: 100vh;
+    display: none;
 }
 
 .silde-bar-content {
@@ -116,20 +163,35 @@ li {
 .silde-bar-content .silde-bar-content__menu {
     position: absolute;
     top: 0;
-    left: 0;
+    left: -30%;
     width: 30%;
     height: 100vh;
     display: flex;
     margin: 0;
-    padding: 10px;
+    padding: 0px;
     flex-direction: column;
     background-color: var(--color-black);
     z-index: 1000;
+    transition: 0.6s;
+}
+
+.silde-bar-content .silde-bar-content__menu.disappear-menu {
+    left: 0;
 }
 
 .silde-bar-content .silde-bar-content__menu .silde-bar-content__menu-tag {
     text-transform: uppercase;
     padding: 15px 10px;
+}
+
+.silde-bar-content .silde-bar-content__menu .silde-bar-content__menu-tag--has-children {
+    display: flex;
+    justify-content: space-between;
+}
+
+.silde-bar-content .silde-bar-content__menu .silde-bar-content__menu-tag--has-children img {
+    width: 12px;
+    height: 12px;
 }
 
 .silde-bar-content .silde-bar-content__menu .silde-bar-content__menu-tag a {
@@ -140,24 +202,31 @@ li {
     cursor: pointer;
 }
 
-
-.hamberger {
- display: flex;
- justify-content: center;
- align-items: center;
- flex-direction: column;
- position: relative;
- top: 0;
- left: 0;
+.silde-bar-content .silde-bar-content__menu .silde-bar-content__menu-tag.color-light-bule a {
+    color: var(--color-light-blue) !important;
 }
 
-.hamberger .hamberger__bar--top, .hamberger__bar, .hamberger__bar--bottom{
+.hamberger {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+}
+
+.hamberger .hamberger__bar--top,
+.hamberger__bar,
+.hamberger__bar--bottom {
     width: 20px;
     height: 2px;
     background-color: black;
-    transition-timing-function: cubic-bezier(.39,.83,.93,.76);
-    transition-duration: 0.1s;
+    transition-timing-function: cubic-bezier(0.39, 0.83, 0.93, 0.76);
+    transition-duration: 0.5s;
     position: absolute;
+    cursor: pointer;
 }
 
 .hamberger .hamberger__bar--top {
@@ -169,19 +238,18 @@ li {
 }
 
 .hamberger .hamberger-before {
-    transform: rotate(45deg);
+    transform: rotate(225deg);
     top: 0;
 }
 
 .hamberger .hamberger-after {
-    transform: rotate(-45deg);
+    transform: rotate(-225deg);
     top: 0;
 }
 
-
 @media (max-width: 992px) {
     .header-wapper .header-content {
-        width: 90%;
+        max-width: 80%;
         justify-content: space-between;
         margin: 0 auto;
     }

@@ -11,7 +11,7 @@
 </head>
 
 <body>
-  <header class="header-wapper">
+  <header id="header-wapper" class="header-wapper position-sticky">
     <div class="header-content">
       <img class="header-content__logo" src="./asset/images/logo.png" alt="logo" />
       <ul class="header-content__menu">
@@ -30,13 +30,29 @@
         <li class="header-content__menu-tag">
           <a href="/"> pricing </a>
         </li>
-        <li class="header-content__menu-tag header-content__menu-tag--has-chidren">
+        <li class="header-content__menu-tag header-content__menu-tag--blog header-content__menu-tag--has-chidren">
           <a href="/"> blog </a>
           <img src="./asset/images/icons8-expand-arrow-24.png" alt="" />
+          <ul class="sub-menu sub-menu--blog">
+            <li class="sub-menu__children sub-menu__blog">
+              <a href="/"> Blog Home </a>
+            </li>
+            <li class="sub-menu__children sub-menu__blog">
+              <a href="/"> Blog Single </a>
+            </li>
+          </ul>
         </li>
-        <li class="header-content__menu-tag header-content__menu-tag--has-chidren">
+        <li class="header-content__menu-tag header-content__menu-tag--pages header-content__menu-tag--has-chidren">
           <a href="/"> pages </a>
           <img src="./asset/images/icons8-expand-arrow-24.png" alt="" />
+          <ul class="sub-menu sub-menu--pages">
+            <li class="sub-menu__children sub-menu__pages">
+              <a href="/"> Element 1 </a>
+            </li>
+            <li class="sub-menu__children sub-menu__pages">
+              <a href="/"> Element 2 </a>
+            </li>
+          </ul>
         </li>
         <li class="header-content__menu-tag">
           <a href="/"> contact </a>
@@ -44,9 +60,9 @@
 
         <li id="js-menu-icon" class="header-content__menu-icon">
           <div class="hamberger">
-           <div class="hamberger__bar--top"></div>
-           <div class="hamberger__bar"></div>
-           <div class="hamberger__bar--bottom"></div>
+            <div class="hamberger__bar--top"></div>
+            <div class="hamberger__bar"></div>
+            <div class="hamberger__bar--bottom"></div>
           </div>
         </li>
 
@@ -54,14 +70,14 @@
     </div>
   </header>
 
-  <!-- <aside class="silde-bar-wapper">
+  <aside class="silde-bar-wapper">
     <div class="silde-bar-content">
       <ul class="silde-bar-content__menu">
         <li class="silde-bar-content__menu-tag">
           <a href=""> home</a>
         </li>
         <li class="silde-bar-content__menu-tag">
-          <a href=""> about</a>
+          <a href="./pages/about.html"> about</a>
         </li>
         <li class="silde-bar-content__menu-tag">
           <a href=""> services</a>
@@ -74,17 +90,37 @@
         </li>
         <li class="silde-bar-content__menu-tag silde-bar-content__menu-tag--has-children">
           <a href=""> blog</a>
+          <img src="./asset/images/icons8-expand-arrow-16.png" alt="" />
         </li>
         <li class="silde-bar-content__menu-tag silde-bar-content__menu-tag--has-children">
           <a href=""> pages</a>
+          <img src="./asset/images/icons8-expand-arrow-16.png" alt="" />
         </li>
         <li class="silde-bar-content__menu-tag">
           <a href=""> contact</a>
         </li>
       </ul>
     </div>
-  </aside> -->
+  </aside>
+  <main class="page home-page">
+    <section class="about-me">
 
+      <div class="about-me__introduce">
+        <div class="about-me__introduce--description">
+          <span>This is me</span>
+          <h1>philip gilbert</h1>
+          <p>You will begin to realise why this exercise is called the Dickens Pattern with reference to the ghost
+            showing Scrooge some different futures</p>
+          <a> discover now</a>
+        </div>
+        <figure>
+          <img src="./asset/images/home-page/hero-img.png" alt="" />
+        </figure>
+      </div>
+
+      <div class="about-me__detail"></div>
+    </section>
+  </main>
   <!-- JS -->
   <script src="./asset/js/global.js"></script>
 </body>

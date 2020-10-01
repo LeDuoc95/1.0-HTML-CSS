@@ -1,0 +1,44 @@
+.home-page {
+    width: 100vw;
+    overflow-x: hidden;
+    color: var(--text-content-color);
+}
+
+.home-page .about-me {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.home-page .about-me .about-me__introduce {
+    padding-top: 170px;
+    display: flex;
+    width: 100%;
+    padding-left: 30px;
+}
+
+.home-page .about-me .about-me__introduce img {
+    width: 400px;
+    height: 500px;
+}
+
+.home-page .about-me .about-me__introduce .about-me__introduce--description span,
+h1,
+a {
+    text-transform: uppercase;
+}
+
+.home-page .about-me .about-me__introduce .about-me__introduce--description h1 {
+    font-size: 60px;
+}
+
+.home-page .about-me .about-me__introduce .about-me__introduce--description p {
+    color: var(--color-text-description);
+    margin-bottom: 30px;
+}
+
+.home-page .about-me .about-me__introduce .about-me__introduce--description a {
+    color: var(--color-white);
+    background-color: var(--color-light-blue);
+    padding: 10px 20px;
+    margin-top: 30px;
+}
