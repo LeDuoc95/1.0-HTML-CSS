@@ -31,6 +31,7 @@ window.addEventListener(
 
     const handleClickMenuIcon = () => {
       if (!openSlideMenu) {
+        window.scrollTo(0, 0);
         body[0].style.overflowY = "hidden";
         headerWapper.classList.remove("position-sticky");
         sildeBarWapper[0].style.display = "block";
