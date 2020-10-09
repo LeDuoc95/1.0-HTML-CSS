@@ -21,7 +21,6 @@
     background-color: var(--color-white);
 }
 
-
 .home-page .about-me .about-me__introduce img,
 .about-me__detail img {
     width: 400px;
@@ -148,4 +147,42 @@ a {
         width: 100%;
         height: 100%;
     }
+}
+
+.services {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: var(--color-white);
+}
+
+.services .services-header {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.services .services-header {
+    text-align: center;
+}
+
+.services .services-header .services-header__description {
+    font-size: 14px;
+    color: var(--color-text-description);
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.services .services-content {
+    /* display: flex;
+    flex-wrap: wrap; */
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.services .services-content .card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 30%;
 }
