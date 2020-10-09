@@ -28,27 +28,34 @@
     height: 500px;
 }
 
+.home-page .about-me .about-me__introduce figure {
+    width: 50%;
+}
+
+.home-page .about-me .about-me__detail figure {
+    width: 50%;
+}
+
 .home-page .about-me .about-me__detail img {
-    width: 300px;
-    height: 350px;
+    width: 400px;
+    height: 450px;
+    margin: 0 auto;
+    display: block;
 }
 
 .home-page .about-me .about-me__introduce .about-me__introduce--description {
     width: 50%;
 }
 
-.home-page .about-me .about-me__introduce .about-me__detail--description {
+.home-page .about-me .about-me__detail .about-me__detail--description {
     width: 50%;
+    padding-right: 30px;
 }
 
 .home-page .about-me .about-me__introduce .about-me__introduce--description span,
 h1,
 a {
     text-transform: uppercase;
-}
-
-.home-page .about-me .about-me__detail .about-me__detail--description {
-    padding-right: 30px;
 }
 
 .home-page .about-me .about-me__detail .about-me__detail--description span,
