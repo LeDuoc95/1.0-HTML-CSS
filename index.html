@@ -8,6 +8,7 @@
   <title>1.0 HTML + CSS</title>
   <link rel="stylesheet" href='./asset/css/global.css'>
   <link rel="stylesheet" href='./asset/css/homePage.css'>
+  <script src="https://cdn.linearicons.com/free/1.0.0/svgembedder.min.js"></script>
 </head>
 
 <body>
@@ -104,18 +105,18 @@
   </aside>
   <main class="page home-page">
     <section class="about-me">
-      <div class="about-me__introduce">
-        <div class="about-me__introduce--description">
-          <span>This is me</span>
-          <h1>philip gilbert</h1>
-          <p>You will begin to realise why this exercise is called the Dickens Pattern with reference to the ghost
-            showing Scrooge some different futures</p>
-          <a> discover now</a>
+        <div class="about-me__introduce">
+          <div class="about-me__introduce--description">
+            <span>This is me</span>
+            <h1>philip gilbert</h1>
+            <p>You will begin to realise why this exercise is called the Dickens Pattern with reference to the ghost
+              showing Scrooge some different futures</p>
+            <a> discover now</a>
+          </div>
+          <figure>
+            <img src="./asset/images/home-page/hero-img.png" alt="" />
+          </figure>
         </div>
-        <figure>
-          <img src="./asset/images/home-page/hero-img.png" alt="" />
-        </figure>
-      </div>
 
       <div class="about-me__detail">
         <figure>
@@ -141,7 +142,7 @@
       </div>
       <div class="services-content">
         <div class="card card--1">
-          <img src="./asset/images/home-page/icons8-doughnut-chart-64.png" alt="">
+          <svg class="lnr lnr-pie-chart color-icon-card"><use xlink:href="#lnr-pie-chart"></use></svg>
           <h2>Web Design</h2>
           <p>
             It is not because things are difficult that we do not dare; it is because we do not dare that they are
@@ -150,7 +151,7 @@
         </div>
 
         <div class="card card--2">
-          <img src="./asset/images/home-page/icons8-responsive-30.png" alt="">
+          <svg class="lnr lnr-laptop-phone color-icon-card"><use xlink:href="#lnr-laptop-phone"></use></svg>
           <h2>Web Development</h2>
           <p>
             If you are an entrepreneur, you know that your success cannot depend on the opinions of others. Like the
@@ -159,7 +160,7 @@
         </div>
 
         <div class="card card--3">
-          <img src="./asset/images/home-page/icons8-camera-100.png" alt="">
+          <svg class="lnr lnr-camera color-icon-card"><use xlink:href="#lnr-camera"></use></svg>
           <h2>Photography</h2>
           <p>
             Do you want to be even more successful? Learn to love learning and growth. The more effort you put into
@@ -168,7 +169,7 @@
         </div>
 
         <div class="card card--4">
-          <img src="./asset/images/home-page/icons8-photo-gallery-30.png" alt="">
+          <svg class="lnr lnr-picture color-icon-card"><use xlink:href="#lnr-picture"></use></svg>
           <h2>Clipping Path</h2>
           <p>
             Hypnosis quit smoking methods maintain caused quite a stir in the medical world over the last two decades.
@@ -177,7 +178,7 @@
         </div>
 
         <div class="card card--5">
-          <img src="./asset/images/home-page/icons8-medical-mobile-app-128.png" alt="">
+          <svg class="lnr lnr-tablet color-icon-card"><use xlink:href="#lnr-tablet"></use></svg>
           <h2>Apps Interface</h2>
           <p>
             Do you sometimes have the feeling that you’re running into the same obstacles over and over again? Many of
@@ -186,7 +187,7 @@
         </div>
 
         <div class="card card--6">
-          <img src="./asset/images/home-page/icons8-design-30.png" alt="">
+          <svg class="lnr lnr-rocket color-icon-card"><use xlink:href="#lnr-rocket"></use></svg>
           <h2>Graphic Design</h2>
           <p>
             You’ve heard the expression, “Just believe it and it will come.” Well, technically, that is true, however,
@@ -195,9 +196,33 @@
         </div>
       </div>
     </section>
+
+    <section class="statistical">
+      <div class="statistical__count statistical__project">
+        <span></span>
+        <p>Projects Completed</p>
+      </div>
+
+      <div class="statistical__count statistical__client">
+        <span></span>
+        <p>Happy Clients</p>
+      </div>
+
+      <div class="statistical__count statistical__cup">
+        <span></span>
+        <p>Cups of Coffee</p>
+      </div>
+
+      <div class="statistical__count statistical__person">
+        <span></span>
+        <p>Real Professionals</p>
+      </div>
+    </section>
+
   </main>
   <!-- JS -->
   <script src="./asset/js/global.js"></script>
+  <script src="./asset/js/homePage.js"></script>
 </body>
 
 </html>

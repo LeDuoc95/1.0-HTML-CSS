@@ -7,6 +7,7 @@
 .home-page .about-me {
     max-width: 1200px;
     margin: 0 auto;
+    /* background-color: var(--main-background-color); */
 }
 
 .home-page .about-me .about-me__introduce,
@@ -17,7 +18,7 @@
 }
 
 .home-page .about-me .about-me__detail {
-    padding-top: 0;
+    padding-top: 50px;
     background-color: var(--color-white);
 }
 
@@ -36,8 +37,8 @@
 }
 
 .home-page .about-me .about-me__detail img {
-    width: 400px;
-    height: 450px;
+    width: 500px;
+    height: 400px;
     margin: 0 auto;
     display: block;
 }
@@ -49,6 +50,10 @@
 .home-page .about-me .about-me__detail .about-me__detail--description {
     width: 50%;
     padding-right: 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .home-page .about-me .about-me__introduce .about-me__introduce--description span,
@@ -97,52 +102,59 @@ a {
     cursor: pointer;
 }
 
+@media (max-width: 1200px) {
+    .about-me__introduce--description {
+        padding-left: 30px;
+    }
+}
+
+
 @media (max-width: 768px) {
     .home-page .about-me .about-me__introduce {
         flex-direction: column;
         padding-left: 0;
     }
-
+    
     .about-me__introduce--description {
         width: 80%;
         margin: 0 auto;
     }
-
+    
     .home-page .about-me .about-me__introduce .about-me__introduce--description h1 {
         font-size: 35px;
     }
-
+    
     .home-page .about-me .about-me__introduce figure {
         width: 70%;
         height: 80vw;
         margin: 0 auto;
     }
-
+    
     .home-page .about-me .about-me__introduce img {
         width: 100%;
         height: 100%;
     }
-
+    
     .home-page .about-me .about-me__detail {
         flex-direction: column;
         padding-left: 0;
     }
-
+    
     .about-me__detail--description {
         width: 80%;
         margin: 0 auto;
     }
-
+    
     .home-page .about-me .about-me__detail .about-me__detail--description h1 {
         font-size: 35px;
     }
-
+    
     .home-page .about-me .about-me__detail figure {
         width: 65%;
         height: 70vw;
         margin: 0 auto;
     }
-
+    
     .home-page .about-me .about-me__detail img {
         width: 100%;
         height: 100%;
@@ -153,6 +165,7 @@ a {
     max-width: 1200px;
     margin: 0 auto;
     background-color: var(--color-white);
+    padding-bottom: 100px;
 }
 
 .services .services-header {
@@ -172,11 +185,10 @@ a {
 }
 
 .services .services-content {
-    /* display: flex;
-    flex-wrap: wrap; */
-    display: inline-flex;
+    display: flex;
     flex-wrap: wrap;
-    gap: 12px;
+    width: 100%;
+    /* margin: -12px; */
 }
 
 .services .services-content .card {
@@ -184,5 +196,57 @@ a {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 30%;
+    width: 33.333333%;
+    padding: 12px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.services .services-content .card p{
+    color: var(--color-text-description);
+}
+
+.services .services-content .card:hover :not(:last-child) {
+    color:var(--color-very-light-blue);
+}
+
+.services .services-content .card .color-icon-card {
+    width: 40px;
+    height: 40px;
+}
+
+.lnr {
+    display: inline-block;
+    fill: currentColor;
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.05em;
+}
+
+@media (max-width: 992px) {
+    .services .services-content .card {
+        width: 50%;
+    }
+}
+
+@media (max-width: 768px) {
+    .services .services-content .card {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.statistical {
+    height: 320px;
+    background-color: var(--color-blue-one);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    color: var(--color-white);
+}
+
+.statistical .statistical__count span{
+    font-weight: 800;
+    font-size: 36px;
 }

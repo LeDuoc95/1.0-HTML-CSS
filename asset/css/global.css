@@ -1,6 +1,6 @@
 body {
     position: relative;
-    background-color: var(--main-background-color);
+    /* background-color: var(--main-background-color); */
     width: 100vw;
     overflow-x: hidden;
     margin: 0;
@@ -34,6 +34,8 @@ li {
     --main-text-color: #5a5a5a;
     --text-content-color: #222222;
     --color-light-blue: #8893ff;
+    --color-very-light-blue: #8490ff;
+    --color-blue-one: #8194ff;
     --color-light-black: #4a4a4c;
     --color-black: #0f0f0f;
     --color-black-ahalf: rgba(0, 0, 0, 0.5);
