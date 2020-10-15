@@ -226,74 +226,138 @@
   </div>
   <div class="feature__content">
     <div class="tab">
-      <span class="tablinks" onclick="openTab(event, 'London')">all</span>
-      <span class="tablinks" onclick="openTab(event, 'Paris')">vector</span>
-      <span class="tablinks" onclick="openTab(event, 'Tokyo')">raster</span>
-      <span class="tablinks" onclick="openTab(event, 'Tokyo')">ui/ux</span>
-      <span class="tablinks" onclick="openTab(event, 'Tokyo')">printing</span>
+      <span class="tablinks active" onclick="openTab(event, 'all',1)">all</span>
+      <span class="tablinks" onclick="openTab(event, 'vector',2)">vector</span>
+      <span class="tablinks" onclick="openTab(event, 'raster',3)">raster</span>
+      <span class="tablinks" onclick="openTab(event, 'ui/ux',4)">ui/ux</span>
+      <span class="tablinks" onclick="openTab(event, 'printing',5)">printing</span>
     </div>
 
-    <div id="London" class="tabcontent">
+    <div id="all" class="tabcontent">
       <div class="tabContent__card tabContent__card--all-1">
         <img src="./asset//images//home-page/img-tabs-1.jpg" alt="img-tabs-1">
         <div class="tabcontent__title">
-          <h3>London</h3>
-          <p>London is the capital city of England.</p>
+          <h3>2D Vinyl Design</h3>
+          <p>vector</p>
         </div>
       </div>
 
       <div class="tabContent__card tabContent__card--all-2">
         <img src="./asset//images//home-page/img-tabs-2.jpg" alt="img-tabs-2">
         <div class="tabcontent__title">
-          <h3>London</h3>
-          <p>London is the capital city of England.</p>
+          <h3>2D Vinyl Design</h3>
+          <p>vector</p>
         </div>
       </div>
 
       <div class="tabContent__card tabContent__card--all-3">
         <img src="./asset//images//home-page/img-tabs-3.jpg" alt="img-tabs-3">
         <div class="tabcontent__title">
-          <h3>London</h3>
-          <p>London is the capital city of England.</p>
+          <h3>Creative Poster Design</h3>
+          <p>Agency</p>
         </div>
       </div>
 
       <div class="tabContent__card tabContent__card--all-4">
         <img src="./asset//images//home-page/img-tabs-4.jpg" alt="img-tabs-4">
         <div class="tabcontent__title">
-          <h3>London</h3>
-          <p>London is the capital city of England.</p>
+          <h3>Embosed Logo Design</h3>
+          <p>Portal</p>
         </div>
       </div>
 
       <div class="tabContent__card tabContent__card--all-5">
         <img src="./asset//images//home-page/img-tabs-5.jpg" alt="img-tabs-5">
         <div class="tabcontent__title">
-          <h3>London</h3>
-          <p>London is the capital city of England.</p>
+          <h3>3D Helmet Design</h3>
+          <p>vector</p>
         </div>
       </div>
 
       <div class="tabContent__card tabContent__card--all-6">
         <img src="./asset//images//home-page/img-tabs-6.jpg" alt="img-tabs-6">
         <div class="tabcontent__title">
-          <h3>London</h3>
-          <p>London is the capital city of England.</p>
+          <h3>2D Vinyl Design</h3>
+          <p>raster</p>
         </div>
       </div>
 
     </div>
     
-    <!-- <div id="Paris" class="tabcontent">
-      <h3>Paris</h3>
-      <p>Paris is the capital of France.</p> 
+    <div id="vector" style="display: none" class="tabcontent">
+      <div class="tabContent__card tabContent__card--all-1">
+        <img src="./asset//images//home-page/img-tabs-1.jpg" alt="img-tabs-1">
+        <div class="tabcontent__title">
+          <h3>2D Vinyl Design</h3>
+          <p>vector</p>
+        </div>
+      </div>
+
+      <div class="tabContent__card tabContent__card--all-2">
+        <img src="./asset//images//home-page/img-tabs-2.jpg" alt="img-tabs-2">
+        <div class="tabcontent__title">
+          <h3>2D Vinyl Design</h3>
+          <p>vector</p>
+        </div>
+      </div>
     </div>
     
-    <div id="Tokyo" class="tabcontent">
-      <h3>Tokyo</h3>
-      <p>Tokyo is the capital of Japan.</p>
-    </div> -->
+    <div id="raster" style="display: none" class="tabcontent">
+      <div class="tabContent__card tabContent__card--all-5">
+        <div class="card-images">
+          <img src="./asset//images//home-page/img-tabs-5.jpg" alt="img-tabs-5">
+          <div class="slay-images"></div>
+        </div>
+        <div class="tabcontent__title">
+          <h3>3D Helmet Design</h3>
+          <p>vector</p>
+        </div>
+      </div>
 
+      <div class="tabContent__card tabContent__card--all-6">
+        <img src="./asset//images//home-page/img-tabs-6.jpg" alt="img-tabs-6">
+        <div class="tabcontent__title">
+          <h3>2D Vinyl Design</h3>
+          <p>raster</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="ui/ux" style="display: none" class="tabcontent">
+      <div class="tabContent__card tabContent__card--all-3">
+        <img src="./asset//images//home-page/img-tabs-3.jpg" alt="img-tabs-3">
+        <div class="tabcontent__title">
+          <h3>Creative Poster Design</h3>
+          <p>Agency</p>
+        </div>
+      </div>
+
+      <div class="tabContent__card tabContent__card--all-4">
+        <img src="./asset//images//home-page/img-tabs-4.jpg" alt="img-tabs-4">
+        <div class="tabcontent__title">
+          <h3>Embosed Logo Design</h3>
+          <p>Portal</p>
+        </div>
+      </div>
+
+      <div class="tabContent__card tabContent__card--all-5">
+        <img src="./asset//images//home-page/img-tabs-5.jpg" alt="img-tabs-5">
+        <div class="tabcontent__title">
+          <h3>3D Helmet Design</h3>
+          <p>vector</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="printing" style="display: none" class="tabcontent">
+      <div class="tabContent__card tabContent__card--all-5">
+        <img src="./asset//images//home-page/img-tabs-5.jpg" alt="img-tabs-5">
+        <div class="tabcontent__title">
+          <h3>3D Helmet Design</h3>
+          <p>vector</p>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
