@@ -352,3 +352,12 @@ a {
     background-color: var(--color-black-ahalf);
     display: none;
 }
+
+.client-feedback {
+    background-color: var(--color-very-light-blue);
+    width: 100%;
+}
+
+.client-feedback .client-feedback__title p{
+    color: var(--color-text-description);
+}
