@@ -1,3 +1,8 @@
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
 body {
     position: relative;
     /* background-color: var(--main-background-color); */
@@ -40,6 +45,10 @@ li {
     --color-black: #0f0f0f;
     --color-black-ahalf: rgba(0, 0, 0, 0.5);
     --color-text-description: #777777;
+    --color-border-one: #edefff;
+    --color-border-two: #e2e5ff;
+    --color-border-three: #84acfe;
+    --color-border-four: #9ebcfe;
 }
 
 .header-wapper .header-content .header-content__menu .header-content__menu-tag.color-light-bule a {

@@ -1,116 +1,114 @@
 <!-- https://colorlib.com/preview/theme/personal/ -->
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>1.0 HTML + CSS</title>
+    <link rel="stylesheet" href="./asset/css/global.css" />
+    <link rel="stylesheet" href="./asset/css/homePage.css" />
+    <script src="https://cdn.linearicons.com/free/1.0.0/svgembedder.min.js"></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>1.0 HTML + CSS</title>
-  <link rel="stylesheet" href='./asset/css/global.css'>
-  <link rel="stylesheet" href='./asset/css/homePage.css'>
-  <script src="https://cdn.linearicons.com/free/1.0.0/svgembedder.min.js"></script>
-</head>
+  <body>
+    <header id="header-wapper" class="header-wapper position-sticky">
+      <div class="header-content">
+        <img class="header-content__logo" src="./asset/images/logo.png" alt="logo" />
+        <ul class="header-content__menu">
+          <li class="header-content__menu-tag">
+            <a href="/index.html"> home </a>
+          </li>
+          <li class="header-content__menu-tag">
+            <a href="./pages/about.html"> about </a>
+          </li>
+          <li class="header-content__menu-tag">
+            <a href="./pages/services.html"> services </a>
+          </li>
+          <li class="header-content__menu-tag">
+            <a href="./pages/portfolio.html"> portfolio </a>
+          </li>
+          <li class="header-content__menu-tag">
+            <a href="/"> pricing </a>
+          </li>
+          <li class="header-content__menu-tag header-content__menu-tag--blog header-content__menu-tag--has-chidren">
+            <a href="/"> blog </a>
+            <img src="./asset/images/icons8-expand-arrow-24.png" alt="" />
+            <ul class="sub-menu sub-menu--blog">
+              <li class="sub-menu__children sub-menu__blog">
+                <a href="/"> Blog Home </a>
+              </li>
+              <li class="sub-menu__children sub-menu__blog">
+                <a href="/"> Blog Single </a>
+              </li>
+            </ul>
+          </li>
+          <li class="header-content__menu-tag header-content__menu-tag--pages header-content__menu-tag--has-chidren">
+            <a href="/"> pages </a>
+            <img src="./asset/images/icons8-expand-arrow-24.png" alt="" />
+            <ul class="sub-menu sub-menu--pages">
+              <li class="sub-menu__children sub-menu__pages">
+                <a href="/"> Element 1 </a>
+              </li>
+              <li class="sub-menu__children sub-menu__pages">
+                <a href="/"> Element 2 </a>
+              </li>
+            </ul>
+          </li>
+          <li class="header-content__menu-tag">
+            <a href="/"> contact </a>
+          </li>
 
-<body>
-  <header id="header-wapper" class="header-wapper position-sticky">
-    <div class="header-content">
-      <img class="header-content__logo" src="./asset/images/logo.png" alt="logo" />
-      <ul class="header-content__menu">
-        <li class="header-content__menu-tag">
-          <a href="/index.html"> home </a>
-        </li>
-        <li class="header-content__menu-tag">
-          <a href="./pages/about.html"> about </a>
-        </li>
-        <li class="header-content__menu-tag">
-          <a href="./pages/services.html"> services </a>
-        </li>
-        <li class="header-content__menu-tag">
-          <a href="./pages/portfolio.html"> portfolio </a>
-        </li>
-        <li class="header-content__menu-tag">
-          <a href="/"> pricing </a>
-        </li>
-        <li class="header-content__menu-tag header-content__menu-tag--blog header-content__menu-tag--has-chidren">
-          <a href="/"> blog </a>
-          <img src="./asset/images/icons8-expand-arrow-24.png" alt="" />
-          <ul class="sub-menu sub-menu--blog">
-            <li class="sub-menu__children sub-menu__blog">
-              <a href="/"> Blog Home </a>
-            </li>
-            <li class="sub-menu__children sub-menu__blog">
-              <a href="/"> Blog Single </a>
-            </li>
-          </ul>
-        </li>
-        <li class="header-content__menu-tag header-content__menu-tag--pages header-content__menu-tag--has-chidren">
-          <a href="/"> pages </a>
-          <img src="./asset/images/icons8-expand-arrow-24.png" alt="" />
-          <ul class="sub-menu sub-menu--pages">
-            <li class="sub-menu__children sub-menu__pages">
-              <a href="/"> Element 1 </a>
-            </li>
-            <li class="sub-menu__children sub-menu__pages">
-              <a href="/"> Element 2 </a>
-            </li>
-          </ul>
-        </li>
-        <li class="header-content__menu-tag">
-          <a href="/"> contact </a>
-        </li>
+          <li id="js-menu-icon" class="header-content__menu-icon">
+            <div class="hamberger">
+              <div class="hamberger__bar--top"></div>
+              <div class="hamberger__bar"></div>
+              <div class="hamberger__bar--bottom"></div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </header>
 
-        <li id="js-menu-icon" class="header-content__menu-icon">
-          <div class="hamberger">
-            <div class="hamberger__bar--top"></div>
-            <div class="hamberger__bar"></div>
-            <div class="hamberger__bar--bottom"></div>
-          </div>
-        </li>
+    <aside class="silde-bar-wapper">
+      <div class="silde-bar-content">
+        <ul class="silde-bar-content__menu">
+          <li class="silde-bar-content__menu-tag">
+            <a href=""> home</a>
+          </li>
+          <li class="silde-bar-content__menu-tag">
+            <a href="./pages/about.html"> about</a>
+          </li>
+          <li class="silde-bar-content__menu-tag">
+            <a href=""> services</a>
+          </li>
+          <li class="silde-bar-content__menu-tag">
+            <a href=""> portfolio</a>
+          </li>
+          <li class="silde-bar-content__menu-tag">
+            <a href=""> pricing</a>
+          </li>
+          <li class="silde-bar-content__menu-tag silde-bar-content__menu-tag--has-children">
+            <a href=""> blog</a>
+            <img src="./asset/images/icons8-expand-arrow-16.png" alt="" />
+          </li>
+          <li class="silde-bar-content__menu-tag silde-bar-content__menu-tag--has-children">
+            <a href=""> pages</a>
+            <img src="./asset/images/icons8-expand-arrow-16.png" alt="" />
+          </li>
+          <li class="silde-bar-content__menu-tag">
+            <a href=""> contact</a>
+          </li>
+        </ul>
+      </div>
+    </aside>
 
-      </ul>
-    </div>
-  </header>
-
-  <aside class="silde-bar-wapper">
-    <div class="silde-bar-content">
-      <ul class="silde-bar-content__menu">
-        <li class="silde-bar-content__menu-tag">
-          <a href=""> home</a>
-        </li>
-        <li class="silde-bar-content__menu-tag">
-          <a href="./pages/about.html"> about</a>
-        </li>
-        <li class="silde-bar-content__menu-tag">
-          <a href=""> services</a>
-        </li>
-        <li class="silde-bar-content__menu-tag">
-          <a href=""> portfolio</a>
-        </li>
-        <li class="silde-bar-content__menu-tag">
-          <a href=""> pricing</a>
-        </li>
-        <li class="silde-bar-content__menu-tag silde-bar-content__menu-tag--has-children">
-          <a href=""> blog</a>
-          <img src="./asset/images/icons8-expand-arrow-16.png" alt="" />
-        </li>
-        <li class="silde-bar-content__menu-tag silde-bar-content__menu-tag--has-children">
-          <a href=""> pages</a>
-          <img src="./asset/images/icons8-expand-arrow-16.png" alt="" />
-        </li>
-        <li class="silde-bar-content__menu-tag">
-          <a href=""> contact</a>
-        </li>
-      </ul>
-    </div>
-  </aside>
-  <main class="page home-page">
-    <section class="about-me">
+    <main class="page home-page">
+      <section class="about-me">
         <div class="about-me__introduce">
           <div class="about-me__introduce--description">
             <span>This is me</span>
             <h1>philip gilbert</h1>
-            <p>You will begin to realise why this exercise is called the Dickens Pattern with reference to the ghost
-              showing Scrooge some different futures</p>
+            <p>You will begin to realise why this exercise is called the Dickens Pattern with reference to the ghost showing Scrooge some different futures</p>
             <a> discover now</a>
           </div>
           <figure>
@@ -118,262 +116,341 @@
           </figure>
         </div>
 
-      <div class="about-me__detail">
-        <figure>
-          <img src="./asset/images/home-page/about-img.png" alt="" />
-        </figure>
-        <div class="about-me__detail--description">
-          <span>about me</span>
-          <h1>personal details</h1>
-          <p>Here, I focus on a range of items and features that we use in life without giving them a second thought.
-            such as Coca Cola. Dolor sit amet, consectetur adipisicing elit,
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-          <a> View full details</a>
+        <div class="about-me__detail">
+          <figure>
+            <img src="./asset/images/home-page/about-img.png" alt="" />
+          </figure>
+          <div class="about-me__detail--description">
+            <span>about me</span>
+            <h1>personal details</h1>
+            <p>Here, I focus on a range of items and features that we use in life without giving them a second thought. such as Coca Cola. Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+            <a> View full details</a>
+          </div>
         </div>
+      </section>
+      <section class="services">
+        <div class="services-header">
+          <h1 class="services-header__title">My Offered Services</h1>
+          <p class="services-header__description">At about this time of year, some months after New Year’s resolutions have been made and kept, or made and neglected.</p>
+        </div>
+        <div class="services-content">
+          <div class="card card--1">
+            <svg class="lnr lnr-pie-chart color-icon-card"><use xlink:href="#lnr-pie-chart"></use></svg>
+            <h2>Web Design</h2>
+            <p>It is not because things are difficult that we do not dare; it is because we do not dare that they are difficult.”</p>
+          </div>
+
+          <div class="card card--2">
+            <svg class="lnr lnr-laptop-phone color-icon-card"><use xlink:href="#lnr-laptop-phone"></use></svg>
+            <h2>Web Development</h2>
+            <p>If you are an entrepreneur, you know that your success cannot depend on the opinions of others. Like the wind, opinions.</p>
+          </div>
+
+          <div class="card card--3">
+            <svg class="lnr lnr-camera color-icon-card"><use xlink:href="#lnr-camera"></use></svg>
+            <h2>Photography</h2>
+            <p>Do you want to be even more successful? Learn to love learning and growth. The more effort you put into improving your skills.</p>
+          </div>
+
+          <div class="card card--4">
+            <svg class="lnr lnr-picture color-icon-card"><use xlink:href="#lnr-picture"></use></svg>
+            <h2>Clipping Path</h2>
+            <p>Hypnosis quit smoking methods maintain caused quite a stir in the medical world over the last two decades. There is a lot of argument.</p>
+          </div>
+
+          <div class="card card--5">
+            <svg class="lnr lnr-tablet color-icon-card"><use xlink:href="#lnr-tablet"></use></svg>
+            <h2>Apps Interface</h2>
+            <p>Do you sometimes have the feeling that you’re running into the same obstacles over and over again? Many of my conflicts</p>
+          </div>
+
+          <div class="card card--6">
+            <svg class="lnr lnr-rocket color-icon-card"><use xlink:href="#lnr-rocket"></use></svg>
+            <h2>Graphic Design</h2>
+            <p>You’ve heard the expression, “Just believe it and it will come.” Well, technically, that is true, however, ‘believing’ is not just thinking that.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="statistical">
+        <div class="statistical__count statistical__project">
+          <span>0</span>
+          <p>Projects Completed</p>
+        </div>
+
+        <div class="statistical__count statistical__client">
+          <span>0</span>
+          <p>Happy Clients</p>
+        </div>
+
+        <div class="statistical__count statistical__cup">
+          <span>0</span>
+          <p>Cups of Coffee</p>
+        </div>
+
+        <div class="statistical__count statistical__person">
+          <span>0</span>
+          <p>Real Professionals</p>
+        </div>
+      </section>
+
+      <section class="feature">
+        <div class="feature__title">
+          <h2>Our Latest Featured Projects</h2>
+          <span>Who are in extremely love with eco friendly system.</span>
+        </div>
+        <div class="feature__content">
+          <div class="tab">
+            <span class="tablinks active" onclick="openTab(event, 'all',1)">all</span>
+            <span class="tablinks" onclick="openTab(event, 'vector',2)">vector</span>
+            <span class="tablinks" onclick="openTab(event, 'raster',3)">raster</span>
+            <span class="tablinks" onclick="openTab(event, 'ui/ux',4)">ui/ux</span>
+            <span class="tablinks" onclick="openTab(event, 'printing',5)">printing</span>
+          </div>
+
+          <div id="all" class="tabcontent">
+            <div class="tabContent__card tabContent__card--all-1">
+              <img src="./asset//images//home-page/img-tabs-1.jpg" alt="img-tabs-1" />
+              <div class="tabcontent__title">
+                <h3>2D Vinyl Design</h3>
+                <p>vector</p>
+              </div>
+            </div>
+
+            <div class="tabContent__card tabContent__card--all-2">
+              <img src="./asset//images//home-page/img-tabs-2.jpg" alt="img-tabs-2" />
+              <div class="tabcontent__title">
+                <h3>2D Vinyl Design</h3>
+                <p>vector</p>
+              </div>
+            </div>
+
+            <div class="tabContent__card tabContent__card--all-3">
+              <img src="./asset//images//home-page/img-tabs-3.jpg" alt="img-tabs-3" />
+              <div class="tabcontent__title">
+                <h3>Creative Poster Design</h3>
+                <p>Agency</p>
+              </div>
+            </div>
+
+            <div class="tabContent__card tabContent__card--all-4">
+              <img src="./asset//images//home-page/img-tabs-4.jpg" alt="img-tabs-4" />
+              <div class="tabcontent__title">
+                <h3>Embosed Logo Design</h3>
+                <p>Portal</p>
+              </div>
+            </div>
+
+            <div class="tabContent__card tabContent__card--all-5">
+              <img src="./asset//images//home-page/img-tabs-5.jpg" alt="img-tabs-5" />
+              <div class="tabcontent__title">
+                <h3>3D Helmet Design</h3>
+                <p>vector</p>
+              </div>
+            </div>
+
+            <div class="tabContent__card tabContent__card--all-6">
+              <img src="./asset//images//home-page/img-tabs-6.jpg" alt="img-tabs-6" />
+              <div class="tabcontent__title">
+                <h3>2D Vinyl Design</h3>
+                <p>raster</p>
+              </div>
+            </div>
+          </div>
+
+          <div id="vector" style="display: none" class="tabcontent">
+            <div class="tabContent__card tabContent__card--all-1">
+              <img src="./asset//images//home-page/img-tabs-1.jpg" alt="img-tabs-1" />
+              <div class="tabcontent__title">
+                <h3>2D Vinyl Design</h3>
+                <p>vector</p>
+              </div>
+            </div>
+
+            <div class="tabContent__card tabContent__card--all-2">
+              <img src="./asset//images//home-page/img-tabs-2.jpg" alt="img-tabs-2" />
+              <div class="tabcontent__title">
+                <h3>2D Vinyl Design</h3>
+                <p>vector</p>
+              </div>
+            </div>
+          </div>
+
+          <div id="raster" style="display: none" class="tabcontent">
+            <div class="tabContent__card tabContent__card--all-5">
+              <div class="card-images">
+                <img src="./asset//images//home-page/img-tabs-5.jpg" alt="img-tabs-5" />
+                <div class="slay-images"></div>
+              </div>
+              <div class="tabcontent__title">
+                <h3>3D Helmet Design</h3>
+                <p>vector</p>
+              </div>
+            </div>
+
+            <div class="tabContent__card tabContent__card--all-6">
+              <img src="./asset//images//home-page/img-tabs-6.jpg" alt="img-tabs-6" />
+              <div class="tabcontent__title">
+                <h3>2D Vinyl Design</h3>
+                <p>raster</p>
+              </div>
+            </div>
+          </div>
+
+          <div id="ui/ux" style="display: none" class="tabcontent">
+            <div class="tabContent__card tabContent__card--all-3">
+              <img src="./asset//images//home-page/img-tabs-3.jpg" alt="img-tabs-3" />
+              <div class="tabcontent__title">
+                <h3>Creative Poster Design</h3>
+                <p>Agency</p>
+              </div>
+            </div>
+
+            <div class="tabContent__card tabContent__card--all-4">
+              <img src="./asset//images//home-page/img-tabs-4.jpg" alt="img-tabs-4" />
+              <div class="tabcontent__title">
+                <h3>Embosed Logo Design</h3>
+                <p>Portal</p>
+              </div>
+            </div>
+
+            <div class="tabContent__card tabContent__card--all-5">
+              <img src="./asset//images//home-page/img-tabs-5.jpg" alt="img-tabs-5" />
+              <div class="tabcontent__title">
+                <h3>3D Helmet Design</h3>
+                <p>vector</p>
+              </div>
+            </div>
+          </div>
+
+          <div id="printing" style="display: none" class="tabcontent">
+            <div class="tabContent__card tabContent__card--all-5">
+              <img src="./asset//images//home-page/img-tabs-5.jpg" alt="img-tabs-5" />
+              <div class="tabcontent__title">
+                <h3>3D Helmet Design</h3>
+                <p>vector</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="client-feedback">
+        <div class="client-feedback__title">
+          <h1>Client’s Feedback About Me</h1>
+          <p>It is very easy to start smoking but it is an uphill task to quit it. Ask any chain smoker or even a person.</p>
+        </div>
+        <div class="client-feedback__carousel">
+          <div class="carousel-slider carousel-slider--one">
+            <img src="./asset/images/home-page/client-feedback-1.png" alt="" />
+            <div class="carousel-slider__description carousel-slider__description--one">
+              <span> A purpose is the eternal condition for success. Every former smoker can tell you just how hard it is to stop smoking cigarettes. However.</span>
+              <h3>Carolyn Craig</h3>
+              <span>CEO at Facebook</span>
+            </div>
+          </div>
+          <div class="carousel-slider carousel-slider--two">
+            <img src="./asset/images/home-page/client-feedback-2.jpg" alt="" />
+            <div class="carousel-slider__description carousel-slider__description--two">
+              <span> Do you want to be even more successful? Learn to love learning and growth. The more effort you put into improving your skills, the bigger the payoff you.</span>
+              <h3>Harriet Maxwell</h3>
+              <span>CEO at Google</span>
+            </div>
+          </div>
+
+          <!-- <div class="carousel-slider carousel-slider--three">
+      <img src="./asset/images/home-page/client-feedback-3.jpg" alt="">
+      <div class="carousel-slider__description carousel-slider__description--three">
+        <span> Do you want to be even more successful? Learn to love learning and growth. The more effort you put into improving your skills, the bigger the payoff you.</span>
+        <h3>Joff Beroft</h3>
+        <span>CEO at Amazon</span>
       </div>
-    </section>
-    <section class="services">
-      <div class="services-header">
-        <h1 class="services-header__title">My Offered Services</h1>
-        <p class="services-header__description"> At about this time of year, some months after New Year’s resolutions
-          have been made and kept, or made and
-          neglected. </p>
-      </div>
-      <div class="services-content">
-        <div class="card card--1">
-          <svg class="lnr lnr-pie-chart color-icon-card"><use xlink:href="#lnr-pie-chart"></use></svg>
-          <h2>Web Design</h2>
-          <p>
-            It is not because things are difficult that we do not dare; it is because we do not dare that they are
-            difficult.”
-          </p>
+    </div> -->
+
+          <div class="control-carousel">
+            <div class="control-carousel__arrow">
+              <svg class="lnr lnr-arrow-up color-icon-card"><use xlink:href="#lnr-arrow-up"></use></svg>
+            </div>
+            <div class="control-carousel__arrow">
+              <svg class="lnr lnr-arrow-down color-icon-card"><use xlink:href="#lnr-arrow-down"></use></svg>
+            </div>
+          </div>
         </div>
+      </section>
 
-        <div class="card card--2">
-          <svg class="lnr lnr-laptop-phone color-icon-card"><use xlink:href="#lnr-laptop-phone"></use></svg>
-          <h2>Web Development</h2>
-          <p>
-            If you are an entrepreneur, you know that your success cannot depend on the opinions of others. Like the
-            wind, opinions.
-          </p>
+      <section class="your-plan">
+        <div class="your-plan__title">
+          <h2>Choose Your Plan</h2>
+          <span>When someone does something that they know that they shouldn’t do, did they.</span>
         </div>
+        <div class="your-plan__package">
+          <div class="package package--one">
+            <div class="package__header">
+              <h1 class="package__header--number">01</h1>
+              <h3>Economy</h3>
+              <span>For the indivuduals</span>
+            </div>
+            <div class="package__content">
+              <p>Secure Online Transfer</p>
+              <p>Unlimited Styles for interface</p>
+              <p>Reliable Customer Service</p>
+            </div>
+            <a class="price" href="#">&#163; 199.000</a>
+            <a class="buy-now" href="#">buy now</a>
+          </div>
 
-        <div class="card card--3">
-          <svg class="lnr lnr-camera color-icon-card"><use xlink:href="#lnr-camera"></use></svg>
-          <h2>Photography</h2>
-          <p>
-            Do you want to be even more successful? Learn to love learning and growth. The more effort you put into
-            improving your skills.
-          </p>
+          <div class="package package--two">
+            <div class="package__header">
+              <h1 class="package__header--number">02</h1>
+              <h3>Business</h3>
+              <span>For the indivuduals</span>
+            </div>
+            <div class="package__content">
+              <p>Secure Online Transfer</p>
+              <p>Unlimited Styles for interface</p>
+              <p>Reliable Customer Service</p>
+            </div>
+            <a class="price" href="#">&#163; 299.000</a>
+            <a class="buy-now" href="#">buy now</a>
+          </div>
+
+          <div class="package package--three">
+            <div class="package__header">
+              <h1 class="package__header--number">03</h1>
+              <h3>Premium</h3>
+              <span>For the indivuduals</span>
+            </div>
+            <div class="package__content">
+              <p>Secure Online Transfer</p>
+              <p>Unlimited Styles for interface</p>
+              <p>Reliable Customer Service</p>
+            </div>
+            <a class="price" href="#">&#163; 399.000</a>
+            <a class="buy-now" href="#">buy now</a>
+          </div>
+
+          <div class="package package--four">
+            <div class="package__header">
+              <h1 class="package__header--number">04</h1>
+              <h3>Exclusive</h3>
+              <span>For the indivuduals</span>
+            </div>
+            <div class="package__content">
+              <p>Secure Online Transfer</p>
+              <p>Unlimited Styles for interface</p>
+              <p>Reliable Customer Service</p>
+            </div>
+            <a class="price" href="#">&#163; 499.000</a>
+            <a class="buy-now" href="#">buy now</a>
+          </div>
         </div>
+      </section>
 
-        <div class="card card--4">
-          <svg class="lnr lnr-picture color-icon-card"><use xlink:href="#lnr-picture"></use></svg>
-          <h2>Clipping Path</h2>
-          <p>
-            Hypnosis quit smoking methods maintain caused quite a stir in the medical world over the last two decades.
-            There is a lot of argument.
-          </p>
-        </div>
+      <section class="brand-area"></section>
+    </main>
 
-        <div class="card card--5">
-          <svg class="lnr lnr-tablet color-icon-card"><use xlink:href="#lnr-tablet"></use></svg>
-          <h2>Apps Interface</h2>
-          <p>
-            Do you sometimes have the feeling that you’re running into the same obstacles over and over again? Many of
-            my conflicts
-          </p>
-        </div>
-
-        <div class="card card--6">
-          <svg class="lnr lnr-rocket color-icon-card"><use xlink:href="#lnr-rocket"></use></svg>
-          <h2>Graphic Design</h2>
-          <p>
-            You’ve heard the expression, “Just believe it and it will come.” Well, technically, that is true, however,
-            ‘believing’ is not just thinking that.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <section class="statistical">
-      <div class="statistical__count statistical__project">
-        <span>0</span>
-        <p>Projects Completed</p>
-      </div>
-
-      <div class="statistical__count statistical__client">
-        <span>0</span>
-        <p>Happy Clients</p>
-      </div>
-
-      <div class="statistical__count statistical__cup">
-        <span>0</span>
-        <p>Cups of Coffee</p>
-      </div>
-
-      <div class="statistical__count statistical__person">
-        <span>0</span>
-        <p>Real Professionals</p>
-      </div>
-    </section>
-
-<section class="feature">
-  <div class="feature__title">
-    <h2>Our Latest Featured Projects</h2>
-    <span>Who are in extremely love with eco friendly system.</span>
-  </div>
-  <div class="feature__content">
-    <div class="tab">
-      <span class="tablinks active" onclick="openTab(event, 'all',1)">all</span>
-      <span class="tablinks" onclick="openTab(event, 'vector',2)">vector</span>
-      <span class="tablinks" onclick="openTab(event, 'raster',3)">raster</span>
-      <span class="tablinks" onclick="openTab(event, 'ui/ux',4)">ui/ux</span>
-      <span class="tablinks" onclick="openTab(event, 'printing',5)">printing</span>
-    </div>
-
-    <div id="all" class="tabcontent">
-      <div class="tabContent__card tabContent__card--all-1">
-        <img src="./asset//images//home-page/img-tabs-1.jpg" alt="img-tabs-1">
-        <div class="tabcontent__title">
-          <h3>2D Vinyl Design</h3>
-          <p>vector</p>
-        </div>
-      </div>
-
-      <div class="tabContent__card tabContent__card--all-2">
-        <img src="./asset//images//home-page/img-tabs-2.jpg" alt="img-tabs-2">
-        <div class="tabcontent__title">
-          <h3>2D Vinyl Design</h3>
-          <p>vector</p>
-        </div>
-      </div>
-
-      <div class="tabContent__card tabContent__card--all-3">
-        <img src="./asset//images//home-page/img-tabs-3.jpg" alt="img-tabs-3">
-        <div class="tabcontent__title">
-          <h3>Creative Poster Design</h3>
-          <p>Agency</p>
-        </div>
-      </div>
-
-      <div class="tabContent__card tabContent__card--all-4">
-        <img src="./asset//images//home-page/img-tabs-4.jpg" alt="img-tabs-4">
-        <div class="tabcontent__title">
-          <h3>Embosed Logo Design</h3>
-          <p>Portal</p>
-        </div>
-      </div>
-
-      <div class="tabContent__card tabContent__card--all-5">
-        <img src="./asset//images//home-page/img-tabs-5.jpg" alt="img-tabs-5">
-        <div class="tabcontent__title">
-          <h3>3D Helmet Design</h3>
-          <p>vector</p>
-        </div>
-      </div>
-
-      <div class="tabContent__card tabContent__card--all-6">
-        <img src="./asset//images//home-page/img-tabs-6.jpg" alt="img-tabs-6">
-        <div class="tabcontent__title">
-          <h3>2D Vinyl Design</h3>
-          <p>raster</p>
-        </div>
-      </div>
-
-    </div>
-    
-    <div id="vector" style="display: none" class="tabcontent">
-      <div class="tabContent__card tabContent__card--all-1">
-        <img src="./asset//images//home-page/img-tabs-1.jpg" alt="img-tabs-1">
-        <div class="tabcontent__title">
-          <h3>2D Vinyl Design</h3>
-          <p>vector</p>
-        </div>
-      </div>
-
-      <div class="tabContent__card tabContent__card--all-2">
-        <img src="./asset//images//home-page/img-tabs-2.jpg" alt="img-tabs-2">
-        <div class="tabcontent__title">
-          <h3>2D Vinyl Design</h3>
-          <p>vector</p>
-        </div>
-      </div>
-    </div>
-    
-    <div id="raster" style="display: none" class="tabcontent">
-      <div class="tabContent__card tabContent__card--all-5">
-        <div class="card-images">
-          <img src="./asset//images//home-page/img-tabs-5.jpg" alt="img-tabs-5">
-          <div class="slay-images"></div>
-        </div>
-        <div class="tabcontent__title">
-          <h3>3D Helmet Design</h3>
-          <p>vector</p>
-        </div>
-      </div>
-
-      <div class="tabContent__card tabContent__card--all-6">
-        <img src="./asset//images//home-page/img-tabs-6.jpg" alt="img-tabs-6">
-        <div class="tabcontent__title">
-          <h3>2D Vinyl Design</h3>
-          <p>raster</p>
-        </div>
-      </div>
-    </div>
-
-    <div id="ui/ux" style="display: none" class="tabcontent">
-      <div class="tabContent__card tabContent__card--all-3">
-        <img src="./asset//images//home-page/img-tabs-3.jpg" alt="img-tabs-3">
-        <div class="tabcontent__title">
-          <h3>Creative Poster Design</h3>
-          <p>Agency</p>
-        </div>
-      </div>
-
-      <div class="tabContent__card tabContent__card--all-4">
-        <img src="./asset//images//home-page/img-tabs-4.jpg" alt="img-tabs-4">
-        <div class="tabcontent__title">
-          <h3>Embosed Logo Design</h3>
-          <p>Portal</p>
-        </div>
-      </div>
-
-      <div class="tabContent__card tabContent__card--all-5">
-        <img src="./asset//images//home-page/img-tabs-5.jpg" alt="img-tabs-5">
-        <div class="tabcontent__title">
-          <h3>3D Helmet Design</h3>
-          <p>vector</p>
-        </div>
-      </div>
-    </div>
-
-    <div id="printing" style="display: none" class="tabcontent">
-      <div class="tabContent__card tabContent__card--all-5">
-        <img src="./asset//images//home-page/img-tabs-5.jpg" alt="img-tabs-5">
-        <div class="tabcontent__title">
-          <h3>3D Helmet Design</h3>
-          <p>vector</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="client-feedback">
-  <div class="client-feedback__title">
-    <h2>Client’s Feedback About Me</h2>
-    <p>It is very easy to start smoking but it is an uphill task to quit it. Ask any chain smoker or even a person.</p>
-  </div>
-  <div>
-    carouse!
-  </div>
-</section>
-  </main>
-  <!-- JS -->
-  <script src="./asset/js/global.js"></script>
-  <script src="./asset/js/homePage.js"></script>
-</body>
-
+    <!-- JS -->
+    <script src="./asset/js/global.js"></script>
+    <script src="./asset/js/homePage.js"></script>
+  </body>
 </html>
