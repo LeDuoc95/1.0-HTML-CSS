@@ -651,3 +651,8 @@ a {
         width: 100%;
     }
 }
+
+/* === brand-area === */
+.brand-area {
+    color: var(--color-light-blue);
+}
