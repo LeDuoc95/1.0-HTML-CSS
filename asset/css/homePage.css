@@ -634,15 +634,15 @@ a {
 .your-plan .your-plan__package .package.package--four:hover .price  {
     display: none;
 }
-
 @media screen and (max-width: 992px) {
     .your-plan .your-plan__package{
         flex-wrap: wrap;
     }
-
+    
     .your-plan .your-plan__package .package{
         width: 50%;
-        margin: 20px;
+        margin-top: 20px;
+        gap: 20px;
     }
 }
 
@@ -651,6 +651,7 @@ a {
         width: 100%;
     }
 }
+
 
 /* === brand-area === */
 .brand-area {
