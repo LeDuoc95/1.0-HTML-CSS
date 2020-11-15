@@ -438,7 +438,7 @@ a {
     flex-direction: column;
     text-align: center;
     padding: 80px 0;
-    margin: 0 auto;
+    margin: 50px auto;
     padding: 10px 0;
 }
 
@@ -634,6 +634,7 @@ a {
 .your-plan .your-plan__package .package.package--four:hover .price  {
     display: none;
 }
+
 @media screen and (max-width: 992px) {
     .your-plan .your-plan__package{
         flex-wrap: wrap;
@@ -653,7 +654,85 @@ a {
 }
 
 
-/* === brand-area === */
-.brand-area {
-    color: var(--color-light-blue);
+/* === Post our blog === */
+.post-our-blog {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    width: 100vw;
+    background-color: var(--main-background-color);
+    padding: 100px 0;
+}
+
+.post-our-blog .post-our-blog__header {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 70vw;
+    margin-bottom: 70px;
+}
+
+.post-our-blog .post-our-blog__header span {
+    color: var(--color-text-description);
+    font-size: 14px;
+}
+
+.post-our-blog .post-our-blog__content {
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.post-our-blog .post-our-blog__content .post-card {
+    width: 33,33%;
+    min-height: 200px;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.post-our-blog .post-our-blog__content .post-card img {
+    width: 100%;
+}
+
+.post-our-blog .post-our-blog__content .post-card .post-card__info {
+    display: flex;
+    padding: 15px 0;
+    align-items: center;
+}
+
+.post-our-blog .post-our-blog__content .post-card .post-card__info > img{
+    margin-right: 15px;
+}
+
+.post-our-blog .post-our-blog__content .post-card .post-card__info > span {
+    font-size: 13px;
+    color: var(--text-content-color);
+}
+
+.post-our-blog .post-our-blog__content .post-card .post-card__info img {
+    width: 30px;
+    height: 30px;
+}
+
+.post-our-blog .post-our-blog__content .post-card .post-card__time {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid var(--color-text-description);
+    color: var(--color-text-description);
+    padding-bottom: 15px;
+}
+
+.post-our-blog .post-our-blog__content .post-card .post-card__time > *{
+    margin-right: 15px;
+}
+
+.post-our-blog .post-our-blog__content .post-card .post-card__content p{
+    color: var(--color-text-description);
 }
