@@ -745,3 +745,17 @@ a {
         width: 50%;
     }
 }
+
+/*carsourel brands */
+.group-brand {
+    transition: all 0.25s ease 0s;
+    width: 3330px;
+    background: linear-gradient(0deg,#8490ff 0%,#62bdfc 100%);
+    display: flex;
+    align-items: center;
+    height: 200px;
+}
+
+.group-brand .single-brand{
+    width: 220px;
+}

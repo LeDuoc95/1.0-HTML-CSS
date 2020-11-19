@@ -2,6 +2,8 @@ const statisticalProject = document.querySelector(".statistical__project span");
 const statisticalClient = document.querySelector(".statistical__client span");
 const statisticalCup = document.querySelector(".statistical__cup span");
 const statisticalPerson = document.querySelector(".statistical__person span");
+const groupBrand = document.getElementById('group-brand');
+let count = 1;
 let theFirst = true;
 
 if (theFirst && window.pageYOffset >= 1550) {
@@ -21,7 +23,6 @@ if (theFirst && window.pageYOffset >= 1550) {
 }
 
 const countNumber = () => {
-  console.log("object");
   if (theFirst && window.pageYOffset >= 1550) {
     theFirst = false;
     for (let i = 0; i < 1750; i++) {
@@ -52,5 +53,12 @@ function openTab(evt, cityName, index) {
   document.getElementById(cityName).style.display = "flex";
   tablinks[index - 1].classList.add("active");
 }
+
+setInterval(() => {
+  wid = count*220 -3330 + 'px';
+  console.log('wid', wid)
+  groupBrand.style.transform = `translate3d(${wid}, 0px, 0px)`;
+  count++
+}, 3000);
 
 document.addEventListener("scroll", countNumber);
