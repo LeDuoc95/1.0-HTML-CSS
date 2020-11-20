@@ -49,6 +49,7 @@ li {
     --color-border-two: #e2e5ff;
     --color-border-three: #84acfe;
     --color-border-four: #9ebcfe;
+    --color-background-footer: #04091e;
 }
 
 .header-wapper .header-content .header-content__menu .header-content__menu-tag.color-light-bule a {

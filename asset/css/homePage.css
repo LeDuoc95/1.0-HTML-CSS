@@ -758,4 +758,35 @@ a {
 
 .group-brand .single-brand{
     width: 220px;
+    box-sizing: border-box;
+    padding: 30px;
+}
+
+/* footer */
+.footer {
+    display: flex;
+    background-color: var(--color-background-footer);
+    width: 100vw;
+    min-height: 250px;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    flex-wrap: wrap;
+}
+section.footer > div {
+    width: 33%;
+    padding: 10px;
+}
+
+section.footer h3{
+    color: var(--color-white);
+}
+
+section.footer p{
+    color: var(--color-text-description);
+    font-size: 13px;
+}
+
+section.footer a{
+    font-size: 12px;
 }

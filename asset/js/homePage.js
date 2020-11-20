@@ -55,10 +55,13 @@ function openTab(evt, cityName, index) {
 }
 
 setInterval(() => {
-  wid = count*220 -3330 + 'px';
-  console.log('wid', wid)
+  if(count === 7) {
+    count = 0;
+  }
+  
+  wid = count*220 -1320 + 'px';
   groupBrand.style.transform = `translate3d(${wid}, 0px, 0px)`;
   count++
-}, 3000);
+}, 2000);
 
 document.addEventListener("scroll", countNumber);
